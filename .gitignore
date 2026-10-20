@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.tmp
+
+# Environments
+.venv/
+env/
+venv/
+
+# Testing & Linters
+.pytest_cache/
+.coverage
+
+# Editor / OS
+.DS_Store
+*.swp
+*~

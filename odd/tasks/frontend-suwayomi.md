@@ -26,11 +26,13 @@ Provide an agnostic, highly configurable scratchpad toggle script for Niri Wayla
   - Checks: Make executable, verify symlinks/binaries exist in user PATH, ensure `Mod+M` works with current Niri keybind.
   - Evidence: Symlinks created and tested with `niri msg -j windows` showing window toggle.
 
-- [ ] **TASK-3**: Documentation & Repository Guide
+- [x] **TASK-3**: Documentation & Repository Guide
   - Path: `frontend_suwayomi/README.md`, `README.md`
   - Route: Direct inline
   - Checks: Document setup, configuration parameters, Niri window rules for Tsumiru and Kaori, explanation of the Flatpak ID vs Wayland app_id distinction.
+  - Evidence: Commit `1664cb0`
 
-- [ ] **TASK-4**: End-to-end verification
+- [x] **TASK-4**: End-to-end verification
   - Route: Direct inline
   - Checks: Test launch when closed, test toggle hide to workspace 99, test restore & focus, verify exit codes.
+  - Evidence: Live testing on Niri IPC showed smooth launch, hide to background workspace, and restore to active workspace with focus.

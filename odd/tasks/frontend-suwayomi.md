@@ -14,15 +14,17 @@ Provide an agnostic, highly configurable scratchpad toggle script for Niri Wayla
 
 ## Tasks
 
-- [ ] **TASK-1**: Implement configurable `toggle-suwayomi.sh` and `config.env` in `frontend_suwayomi/`
+- [x] **TASK-1**: Implement configurable `toggle-suwayomi.sh` and `config.env` in `frontend_suwayomi/`
   - Path: `frontend_suwayomi/toggle-suwayomi.sh`, `frontend_suwayomi/config.env`
   - Route: Direct inline
   - Checks: Support loading from external config file or script variables; smart fallback resolving `tsumiru` -> `app.tsumiru.Tsumiru` and `kaori` -> `io.github.riyaniii.Kaori`; launch without flatpak naming errors.
+  - Evidence: Commit `ea07342`
 
-- [ ] **TASK-2**: Integrate with user system paths and verify Niri keybinding compatibility
+- [x] **TASK-2**: Integrate with user system paths and verify Niri keybinding compatibility
   - Path: `~/.local/bin/toggle-suwayomi.sh`, `~/.local/bin/toggle-tsumiru.sh`
   - Route: Direct inline
   - Checks: Make executable, verify symlinks/binaries exist in user PATH, ensure `Mod+M` works with current Niri keybind.
+  - Evidence: Symlinks created and tested with `niri msg -j windows` showing window toggle.
 
 - [ ] **TASK-3**: Documentation & Repository Guide
   - Path: `frontend_suwayomi/README.md`, `README.md`
